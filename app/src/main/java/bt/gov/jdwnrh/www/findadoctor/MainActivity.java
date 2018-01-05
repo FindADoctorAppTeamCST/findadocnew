@@ -84,10 +84,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_notif) {
             startActivity(new Intent(getApplication(), Notification.class));
             return true;
-        } /* else if (id == R.id.nav_login) {
-            startActivity(new Intent(getApplication(), Login.class));
+        }  else if (id == R.id.nav_login) {
+            startActivity(new Intent(getApplication(), DoctorLogin.class));
             return true;
-        }*/ else if (id == R.id.nav_feedback) {
+        } else if (id == R.id.nav_feedback) {
             startActivity(new Intent(getApplication(), Feedback.class));
             return true;
         } else if (id == R.id.nav_share) {
