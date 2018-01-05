@@ -102,5 +102,5 @@
 
     <!-- Login Screen String Resource -->
     <string name="loginImageDesc">Login Screen Logo</string>
-
+    <string name="targetTitle">Check Availability</string>
 </resources>
