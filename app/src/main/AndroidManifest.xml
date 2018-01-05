@@ -93,7 +93,7 @@
             android:name=".DoctorLogin"
             android:label="@string/title_activity_doctor_login"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".SearchAct"></activity>
+        <activity android:name=".CatTarget"></activity>
     </application>
 
 </manifest>
