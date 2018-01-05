@@ -5,4 +5,102 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="jdwnrh_hosp_name_short">JDW National Referral Hospital</string>
+    <string name="search">Search</string>
+
+    <!-->Menu String Resources -->
+    <string name="notif">Notification</string>
+    <string name="login">Login</string>
+    <string name="feedback">Send Feedback</string>
+    <string name="share">Share App</string>
+    <string name="rate">Rate App</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="moreapps">Related Apps</string>
+    <string name="communicate">Communicate</string>
+    <string name="more">More</string>
+
+    <!-- Main Content Label Resources -->
+    <string name="lanes">Anesthesiologist</string>
+    <string name="lcard">Cardiologist</string>
+    <string name="ldent">Dentist</string>
+    <string name="lderm">Dermatologist</string>
+    <string name="lent">ENT</string>
+    <string name="lgyna">Gynaecologist</string>
+    <string name="lmicr">Microbiologist</string>
+    <string name="lmeds">M. Specialist</string>
+    <string name="lonco">Oncologist</string>
+    <string name="lopd">OPD</string>
+    <string name="lopth">Opthalmologist</string>
+    <string name="lpedi">Pediatrician</string>
+    <string name="lpsyc">Psychiatrist</string>
+    <string name="lradi">Radiologist</string>
+    <string name="lsurg">Surgoen</string>
+
+    <!-- Floating Action Button Activity String Reference Resources -->
+    <string name="dial">Contact Us</string>
+    <string name="callInst">Tap the button to make a Call</string>
+
+    <!-- Feedback Activity Strings -->
+    <string name="enter_feedback">Enter Your Feedback Here</string>
+    <string name="feedbackAno">Your Feedback is Anonymous.</string>
+    <string name="feedbackInfo">You can provide feedback for the hospital, as well as app.</string>
+
+    <!-- About Us Section String Resource Reference -->
+    <string name="about_us_title">Jigme Dorji Wangchuck National Referral Hospital, Thimphu.</string>
+    <string name="about_thimphu">The JDWNRH is the main hospital in Bhutan, located in the capital of Bhutan,
+        Thimphu. It was established in 1972, and provides free basic medical treatment as well as advanced
+        surgeries and emergency services to citizens from all over the country. It provides the most sophisticated
+        health evaluation and management services in the country.</string>
+    <string name="App_heading">Find A Doctor App</string>
+    <string name="about_App">This Android App Find A Doctor is to check the availability of doctors in the hospital
+        especially in the JDWNRH. This App provides platform to avail the services facilitated by doctors and their
+        availability in the hospital if users have installed this app.</string>
+
+    <!-- Help Activity String Resource -->
+    <string name="help_feature"> User Manual </string>
+    <string name="about_search">This button helps user to search the doctor through their name or by their specialization.</string>
+
+    <string name="about_login">Doctors need to enter their credentials to update their status.</string>
+    <string name="about_newsfeed">This feature provides information and alert the users about the latest outbreak of diseases and
+        updates the important messages. </string>
+
+    <string name="about_setting">This feature contain list of options such as Login,About us,Help,Feedback,Rate us,Share app
+        and More Apps.</string>
+    <string name="about_help">This feature provides user manual for the app users to guide them when they encounter with the problems.</string>
+    <string name="about_shareApp">This section of setting is to suggest the users to share app to social media
+        if it is found very useful and productive.</string>
+
+    <string name="about_aboutFeature">This section of the setting is to make users know more about the App and their functionality.</string>
+    <string name="about_feedback"> This feature provides the platform for users to comments and give feedback for the betterment of the App.</string>
+    <string name="about_rateUs">This section is to rate the App according to the services facilitated by the App to the users.</string>
+    <string name="back">Back</string>
+    <string name="tg">Help feature</string>
+    <string name="next">Next</string>
+    <string name="setting_feature">Setting feature</string>
+    <string name="share_app">Share App</string>
+    <string name="login_button">This provides an Admin and doctors to enter their credentials to update their status.</string>
+    <string name="hosp_image_desc">Hospital Image</string>
+    <string name="login_feature">Login feature</string>
+
+    <!-- Related Apps String Resources -->
+    <string name="moreInst">More Apps from JDWNRH</string>
+    <string name="title_activity_doctor_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Login Screen String Resource -->
+    <string name="loginImageDesc">Login Screen Logo</string>
+
 </resources>
