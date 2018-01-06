@@ -92,8 +92,17 @@
         <activity
             android:name=".DoctorLogin"
             android:label="@string/title_activity_doctor_login"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CatTarget"
+            android:label="@string/targetTitle"
             android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+        <activity android:name=".DocPage"></activity>
     </application>
 
 </manifest>

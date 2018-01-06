@@ -19,8 +19,8 @@ public class Feedback extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
-        context=this;
-        editText=(EditText) findViewById(R.id.feedbackSpace);
+        context = this;
+        editText = (EditText) findViewById(R.id.feedbackSpace);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -29,7 +29,7 @@ public class Feedback extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                String s= editText.getText().toString();
+                String s = editText.getText().toString();
                 Toast.makeText(Feedback.this, "", Toast.LENGTH_SHORT).show();
             }
 
@@ -39,10 +39,11 @@ public class Feedback extends AppCompatActivity {
             }
         });
     }
+
     //Feedback
-    public void SubmitFeedback(View view){
+    public void SubmitFeedback(View view) {
         //dialog box
-        AlertDialog.Builder builder=new AlertDialog.Builder(context);
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Feedback Status: ");
         builder.setMessage(" Feedback Submitted Successfully.");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

@@ -68,6 +68,7 @@
                 android:layout_marginBottom="15dp">
 
                 <TextView
+                    android:id="@+id/l1"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -75,12 +76,14 @@
                     />
 
                 <TextView
+                    android:id="@+id/l2"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/lcard"/>
 
                 <TextView
+                    android:id="@+id/l3"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -126,6 +129,7 @@
                 android:layout_marginBottom="15dp">
 
                 <TextView
+                    android:id="@+id/l4"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -133,12 +137,14 @@
                     />
 
                 <TextView
+                    android:id="@+id/l5"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/lent"/>
 
                 <TextView
+                    android:id="@+id/l6"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -184,6 +190,7 @@
                 android:layout_marginBottom="15dp">
 
                 <TextView
+                    android:id="@+id/l7"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -191,12 +198,14 @@
                     />
 
                 <TextView
+                    android:id="@+id/l8"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/lmeds"/>
 
                 <TextView
+                    android:id="@+id/l9"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -242,6 +251,7 @@
                 android:layout_marginBottom="15dp">
 
                 <TextView
+                    android:id="@+id/l10"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -249,12 +259,14 @@
                     />
 
                 <TextView
+                    android:id="@+id/l11"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/lopth"/>
 
                 <TextView
+                    android:id="@+id/l12"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -299,6 +311,7 @@
                 android:layout_gravity="center_horizontal" >
 
                 <TextView
+                    android:id="@+id/l13"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
@@ -306,12 +319,14 @@
                     />
 
                 <TextView
+                    android:id="@+id/l14"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/lradi"/>
 
                 <TextView
+                    android:id="@+id/l15"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
