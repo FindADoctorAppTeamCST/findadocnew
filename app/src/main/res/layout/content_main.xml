@@ -8,7 +8,6 @@
     tools:context="bt.gov.jdwnrh.www.findadoctor.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"

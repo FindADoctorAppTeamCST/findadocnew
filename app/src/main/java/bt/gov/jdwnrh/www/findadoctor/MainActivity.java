@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplication(),Dialler.class));
+                Toast.makeText(MainActivity.this, "Replace this action with appropriate Task Here", Toast.LENGTH_LONG).show();
             }
         });
 
