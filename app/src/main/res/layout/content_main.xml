@@ -307,7 +307,8 @@
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" >
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/l13"
@@ -338,11 +339,11 @@
                 android:layout_gravity="center_horizontal">
 
                 <ImageView
+                    android:id="@+id/imageView2"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/psychiatry"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@mipmap/psychiatry" />
 
                 <ImageView
                     android:id="@+id/rai"
@@ -365,7 +366,8 @@
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" >
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/l16"
@@ -397,8 +399,31 @@
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="@dimen/bottomRowSpace_mainScreen" />
             </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/fab_margin">
+
+                <TextView
+                    android:id="@+id/space1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/endOfList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endOfListNot"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/space2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
         </TableLayout>
 
 
