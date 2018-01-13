@@ -338,7 +338,7 @@
                 android:layout_gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_width="@dimen/gridImageSize"
+                    android:layout_width=git add ."@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     app:srcCompat="@mipmap/psychiatry"
                     android:padding="10dp"
