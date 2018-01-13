@@ -79,7 +79,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lcard"/>
+                    android:text="@string/lcom"/>
 
                 <TextView
                     android:id="@+id/l3"
@@ -140,14 +140,14 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lent"/>
+                    android:text="@string/lemer"/>
 
                 <TextView
                     android:id="@+id/l6"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lgyna"/>
+                    android:text="@string/lent"/>
 
             </TableRow>
 
@@ -193,7 +193,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lmicr"
+                    android:text="@string/lfore"
                     />
 
                 <TextView
@@ -201,14 +201,14 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lmeds"/>
+                    android:text="@string/lopd"/>
 
                 <TextView
                     android:id="@+id/l9"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lonco"/>
+                    android:text="@string/lgyna"/>
 
             </TableRow>
 
@@ -254,7 +254,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lopd"
+                    android:text="@string/lmed"
                     />
 
                 <TextView
@@ -269,7 +269,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lpedi"/>
+                    android:text="@string/lortho"/>
 
             </TableRow>
 
@@ -314,7 +314,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lpsyc"
+                    android:text="@string/lpath"
                     />
 
                 <TextView
@@ -322,10 +322,68 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lradi"/>
+                    android:text="@string/lped"/>
 
                 <TextView
                     android:id="@+id/l15"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lphar"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/gridImageSize"
+                    android:layout_height="@dimen/gridImageSize"
+                    app:srcCompat="@mipmap/psychiatry"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/rai"
+                    android:layout_width="@dimen/gridImageSize"
+                    android:layout_height="@dimen/gridImageSize"
+                    app:srcCompat="@mipmap/radiology"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/sur"
+                    android:layout_width="@dimen/gridImageSize"
+                    android:layout_height="@dimen/gridImageSize"
+                    app:srcCompat="@mipmap/surgeon"
+                    android:padding="10dp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/l16"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lpsyc"
+                    />
+
+                <TextView
+                    android:id="@+id/l17"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lradi"/>
+
+                <TextView
+                    android:id="@+id/l18"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
