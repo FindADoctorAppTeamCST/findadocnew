@@ -10,5 +10,7 @@
 
     <!-- Custom Dimensions -->
     <dimen name="gridImageSize">119dp</dimen>
+    <dimen name="gridImageSize600dp">190dp</dimen>
+    <dimen name="gridImageSize720dp">200dp</dimen>
     <dimen name="spTitleDoc">25dp</dimen>
 </resources>
