@@ -2,6 +2,8 @@ package bt.gov.jdwnrh.www.findadoctor;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.graphics.Color;
 import com.android.volley.AuthFailureError;
@@ -15,6 +17,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,6 +27,9 @@ public class CatTarget extends AppCompatActivity {
     private RequestQueue requestQueue;
     private static final String URL = "http://172.25.33.57/fadapp/mirror.php";
     private StringRequest request;
+    ArrayList<HashMap<String,String>> list = new ArrayList<HashMap<String,String>>();
+    private SimpleAdapter simpAdap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +38,7 @@ public class CatTarget extends AppCompatActivity {
         passTitle=getIntent().getExtras().getString("Value");
         titleStr.setText(passTitle);
 
-        nm_t=(TextView)findViewById(R.id.nm);
+        /*nm_t=(TextView)findViewById(R.id.nm);
         st_t=(TextView)findViewById(R.id.st);
         requestQueue = Volley.newRequestQueue(this);
         request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
@@ -68,5 +74,22 @@ public class CatTarget extends AppCompatActivity {
             }
         };
         requestQueue.add(request);
+*/
+        HashMap<String,String> item;
+        for(int i=0;i<nameAndDesig.length;i++){
+            item = new HashMap<String,String>();
+            item.put("doc_name", nameAndDesig[i][0]);
+            item.put("doc_designation", nameAndDesig[i][1]);
+            list.add(item);
+        }
+
+        simpAdap = new SimpleAdapter(this, list,
+                R.layout.doc_display_textview_resource,
+                new String[] { "doc_name","doc_designation" },
+                new int[] {R.id.docName, R.id.docDesig});
+
+        ((ListView)findViewById(R.id.list)).setAdapter(simpAdap);
     }
+
+    private String[][] nameAndDesig={{"Khusant Chhetri","Developer / Leader"},{"Karma Dorji","Analyst"},{"Tula Ram","Technical Writer"},{"Deepika Suberi","Designer"},{"Meg Nath Sharma","Analyst"},{"Tshering Penjore","Developer"},{"Kinzang Pelden","Analyst"},{"Gagen Ghalley","Developer"},{"Sangay Lhaden","Developer"}};
 }

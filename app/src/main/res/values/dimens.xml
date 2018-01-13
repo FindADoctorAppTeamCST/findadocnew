@@ -14,4 +14,5 @@
     <dimen name="gridImageSize720dp">200dp</dimen>
     <dimen name="spTitleDoc">25dp</dimen>
     <dimen name="bottomRowSpace_mainScreen">25dp</dimen>
+    <dimen name="docScreenLog">50dp</dimen>
 </resources>
