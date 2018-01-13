@@ -104,4 +104,7 @@
     <string name="loginImageDesc">Login Screen Logo</string>
     <string name="targetTitle">Check Availability</string>
     <string name="doc_profile_label">Your Profile</string>
+
+    <string name="nameTitle">Name</string>
+    <string name="avail">Availability</string>
 </resources>
