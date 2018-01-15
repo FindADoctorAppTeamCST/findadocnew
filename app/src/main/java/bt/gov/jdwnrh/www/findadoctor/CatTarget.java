@@ -76,20 +76,24 @@ public class CatTarget extends AppCompatActivity {
         requestQueue.add(request);
 */
         HashMap<String,String> item;
-        for(int i=0;i<nameAndDesig.length;i++){
+        for(int i=0;i<nameAndDesig.length;i++) {
             item = new HashMap<String,String>();
             item.put("doc_name", nameAndDesig[i][0]);
             item.put("doc_designation", nameAndDesig[i][1]);
+            item.put("doc_status", nameAndDesig[i][2]);
             list.add(item);
         }
 
         simpAdap = new SimpleAdapter(this, list,
                 R.layout.doc_display_textview_resource,
-                new String[] { "doc_name","doc_designation" },
-                new int[] {R.id.docName, R.id.docDesig});
+                new String[] { "doc_name","doc_designation","doc_status" },
+                new int[] {R.id.docName, R.id.docDesig, R.id.status});
 
         ((ListView)findViewById(R.id.list)).setAdapter(simpAdap);
     }
 
-    private String[][] nameAndDesig={{"Khusant Chhetri","Developer / Leader"},{"Karma Dorji","Analyst"},{"Tula Ram","Technical Writer"},{"Deepika Suberi","Designer"},{"Meg Nath Sharma","Analyst"},{"Tshering Penjore","Developer"},{"Kinzang Pelden","Analyst"},{"Gagen Ghalley","Developer"},{"Sangay Lhaden","Developer"}};
+    //This array will be updated by the entry from the database.
+    //The database connection functionn from the above wilgl add 3 values to the list array i.e. Name, Designation, Status, and 4 values with added date_till vaue if the doctor is out of station.
+    private String[][] nameAndDesig={{"Khusant Chhetri","Developer","IN"},{"Karma Dorji","Analyst","OUT"},{"Tula Ram","Technical Writer","IN"},{"Deepika Suberi","Designer","IN"},{"Meg Nath Sharma","Analyst","IN"},{"Tshering Penjore","Developer","IN"},{"Kinzang Pelden","Analyst","OUT"},{"Gagen Ghalley","Developer","IN"},{"Sangay Lhaden","Developer","OUT"}};
+
 }
