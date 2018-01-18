@@ -10,6 +10,9 @@
 
     <!-- Custom Dimensions -->
     <dimen name="gridImageSize">119dp</dimen>
-    <dimen name="gridImageSizeM">150dp</dimen>
-    <dimen name="gridImageSizeL">200dp</dimen>
+    <dimen name="gridImageSize600dp">190dp</dimen>
+    <dimen name="gridImageSize720dp">200dp</dimen>
+    <dimen name="spTitleDoc">25dp</dimen>
+    <dimen name="bottomRowSpace_mainScreen">25dp</dimen>
+    <dimen name="docScreenLog">50dp</dimen>
 </resources>

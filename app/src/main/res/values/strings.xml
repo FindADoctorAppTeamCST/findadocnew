@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Find A Doctor</string>
+    <string name="app_name">Find A Doctor (JDWNRH)</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -21,21 +21,24 @@
     <string name="more">More</string>
 
     <!-- Main Content Label Resources -->
-    <string name="lanes">Anesthesiologist</string>
-    <string name="lcard">Cardiologist</string>
-    <string name="ldent">Dentist</string>
-    <string name="lderm">Dermatologist</string>
+    <string name="lanes">Anesthesiology</string>
+    <string name="lcom">Community Health</string>>
+    <string name="ldent">Dental</string>
+    <string name="lderm">Dermatology</string>
+    <string name="lemer">Emergency</string>
     <string name="lent">ENT</string>
-    <string name="lgyna">Gynaecologist</string>
-    <string name="lmicr">Microbiologist</string>
-    <string name="lmeds">M. Specialist</string>
-    <string name="lonco">Oncologist</string>
-    <string name="lopd">OPD</string>
-    <string name="lopth">Opthalmologist</string>
-    <string name="lpedi">Pediatrician</string>
-    <string name="lpsyc">Psychiatrist</string>
-    <string name="lradi">Radiologist</string>
-    <string name="lsurg">Surgoen</string>
+    <string name="lfore">Forensic</string>
+    <string name="lopd">General OPD</string>
+    <string name="lgyna">Gynaecology</string>
+    <string name="lmed">Medical</string>
+    <string name="lopth">Ophthalmology</string>
+    <string name="lortho">Orthopaedic</string>
+    <string name="lpath">Pathology</string>
+    <string name="lped">Pediatrics</string>
+    <string name="lphar">Pharmacy</string>
+    <string name="lpsyc">Psychiatry</string>
+    <string name="lradi">Radiology</string>
+    <string name="lsurg">Surgical</string>
 
     <!-- Floating Action Button Activity String Reference Resources -->
     <string name="dial">Contact Us</string>
@@ -102,5 +105,10 @@
 
     <!-- Login Screen String Resource -->
     <string name="loginImageDesc">Login Screen Logo</string>
+    <string name="targetTitle">Check Availability</string>
+    <string name="doc_profile_label">Your Profile</string>
 
+    <string name="nameTitle">Name</string>
+    <string name="avail">Availability</string>
+    <string name="endOfListNot">End of List</string>
 </resources>
