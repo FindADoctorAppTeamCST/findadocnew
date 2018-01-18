@@ -10,4 +10,6 @@
 
     <!-- Custom Dimensions -->
     <dimen name="gridImageSize">119dp</dimen>
+    <dimen name="gridImageSizeM">150dp</dimen>
+    <dimen name="gridImageSizeL">200dp</dimen>
 </resources>
