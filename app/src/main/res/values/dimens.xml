@@ -12,18 +12,11 @@
     <!-- The dimensions are in three categories for the small, medium and large device compatibility -->
     <!-- The name attribute for the dimention resource is in the format name<x> where x is empty for the normal device screen, M for Medium sw600 dp screen and L for Large sw720dp screens -->
     <dimen name="gridImageSize">119dp</dimen>
-    <dimen name="gridImageSizeM">190dp</dimen>
-    <dimen name="gridImageSizeL">280dp</dimen>
+
 
     <dimen name="spTitleDoc">25dp</dimen>
-    <dimen name="spTitleDocM">25dp</dimen>
-    <dimen name="spTitleDocL">25dp</dimen>
 
     <dimen name="bottomRowSpace_mainScreen">25dp</dimen>
-    <dimen name="bottomRowSpace_mainScreenM">25dp</dimen>
-    <dimen name="bottomRowSpace_mainScreenL">25dp</dimen>
 
     <dimen name="docScreenLog">50dp</dimen>
-    <dimen name="docScreenLogM">50dp</dimen>
-    <dimen name="docScreenLogL">50dp</dimen>
 </resources>
