@@ -5,4 +5,5 @@
     <color name="colorAccent">@android:color/holo_blue_dark</color>
 
     <color name="hintColor">#505050</color>
+    <color name="mainBackground">#EEEEEE</color>
 </resources>
