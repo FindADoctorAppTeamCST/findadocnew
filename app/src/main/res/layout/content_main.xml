@@ -74,21 +74,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lanes" />
+                    android:text="@string/lanes"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lcom" />
+                    android:text="@string/lcom"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/ldent" />
+                    android:text="@string/ldent"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -132,21 +135,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lderm" />
+                    android:text="@string/lderm"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lemer" />
+                    android:text="@string/lemer"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lent" />
+                    android:text="@string/lent"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -189,21 +195,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lfore" />
+                    android:text="@string/lfore"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lopd" />
+                    android:text="@string/lopd"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lgyna" />
+                    android:text="@string/lgyna"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -246,21 +255,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lmed" />
+                    android:text="@string/lmed"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lopth" />
+                    android:text="@string/lopth"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lortho" />
+                    android:text="@string/lortho"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -303,21 +315,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lpath" />
+                    android:text="@string/lpath"
+                    android:textColor="@android:color/black" />
 
                 <TextView
                     android:id="@+id/l14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lped" />
+                    android:text="@string/lped"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lphar" />
+                    android:text="@string/lphar"
+                    android:textColor="@android:color/black"/>
             </TableRow>
 
             <TableRow
@@ -359,21 +374,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lpsyc" />
+                    android:text="@string/lpsyc"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lradi" />
+                    android:text="@string/lradi"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/lsurg" />
+                    android:text="@string/lsurg"
+                    android:textColor="@android:color/black"/>
             </TableRow>
 
             <TableRow
@@ -402,7 +420,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/endOfListNot" />
+                    android:text="@string/endOfListNot"/>
 
                 <TextView
                     android:id="@+id/space2"
