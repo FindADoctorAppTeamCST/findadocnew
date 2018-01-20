@@ -6,23 +6,26 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="bt.gov.jdwnrh.www.findadoctor.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/mainBackground">
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="8dp"
-        tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -40,53 +43,55 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/anesthesiology"
-                    />
+                    app:srcCompat="@drawable/anesthesiology" />
+
 
                 <ImageView
                     android:id="@+id/card"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/cardiology" />
+                    app:srcCompat="@drawable/community_health" />
 
                 <ImageView
                     android:id="@+id/dent"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/dental" />
+                    app:srcCompat="@drawable/dental" />
 
 
             </TableRow>
 
             <TableRow
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/l1"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/lanes"
-                    />
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l2"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lcom"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lcom"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l3"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/ldent"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ldent"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -99,25 +104,23 @@
                     android:id="@+id/derm"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/dermatology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/dermatology" />
+
 
                 <ImageView
                     android:id="@+id/ent"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/ent"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/emergency" />
 
                 <ImageView
                     android:id="@+id/gyna"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/gynaecology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/ent" />
 
             </TableRow>
 
@@ -129,25 +132,27 @@
 
                 <TextView
                     android:id="@+id/l4"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/lderm"
-                    />
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l5"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lemer"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lemer"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l6"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lent"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lent"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -160,25 +165,22 @@
                     android:id="@+id/micr"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/microbiology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/forensic" />
 
                 <ImageView
                     android:id="@+id/meds"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/mspecialist"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/general_opd" />
 
                 <ImageView
                     android:id="@+id/onco"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/oncology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/gynaecology" />
 
             </TableRow>
 
@@ -190,25 +192,27 @@
 
                 <TextView
                     android:id="@+id/l7"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/lfore"
-                    />
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l8"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lopd"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lopd"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l9"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lgyna"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lgyna"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -221,25 +225,22 @@
                     android:id="@+id/opd"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/opd"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/medicine" />
 
                 <ImageView
                     android:id="@+id/opth"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/ophthalmology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/opthalmology" />
 
                 <ImageView
                     android:id="@+id/pedt"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/pediatrician"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/orthopaedic" />
 
             </TableRow>
 
@@ -251,25 +252,27 @@
 
                 <TextView
                     android:id="@+id/l10"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/lmed"
-                    />
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l11"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lopth"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lopth"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l12"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lortho"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lortho"
+                    android:textColor="@android:color/black"/>
 
             </TableRow>
 
@@ -282,25 +285,22 @@
                     android:id="@+id/psyc"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/psychiatry"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/pathology" />
 
                 <ImageView
                     android:id="@+id/radi"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/radiology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/pediatrics" />
 
                 <ImageView
                     android:id="@+id/surg"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/surgeon"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/pharmacy" />
 
             </TableRow>
 
@@ -312,25 +312,27 @@
 
                 <TextView
                     android:id="@+id/l13"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/lpath"
-                    />
+                    android:textColor="@android:color/black" />
 
                 <TextView
                     android:id="@+id/l14"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lped"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lped"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l15"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lphar"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lphar"
+                    android:textColor="@android:color/black"/>
             </TableRow>
 
             <TableRow
@@ -343,23 +345,21 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/psychiatry" />
+                    app:srcCompat="@drawable/psyhiatry" />
 
                 <ImageView
                     android:id="@+id/rai"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/radiology"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/radiology" />
 
                 <ImageView
                     android:id="@+id/sur"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
-                    app:srcCompat="@mipmap/surgeon"
                     android:padding="10dp"
-                    />
+                    app:srcCompat="@drawable/surgical" />
 
             </TableRow>
 
@@ -371,31 +371,33 @@
 
                 <TextView
                     android:id="@+id/l16"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/lpsyc"
-                    />
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l17"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lradi"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lradi"
+                    android:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/l18"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/lsurg"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lsurg"
+                    android:textColor="@android:color/black"/>
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" >
+                android:layout_gravity="center_horizontal">
 
                 <Space
                     android:layout_width="wrap_content"
@@ -412,12 +414,14 @@
                     android:id="@+id/space1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+
                 <TextView
                     android:id="@+id/endOfList"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/endOfListNot"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:text="@string/endOfListNot"/>
+
                 <TextView
                     android:id="@+id/space2"
                     android:layout_width="wrap_content"
