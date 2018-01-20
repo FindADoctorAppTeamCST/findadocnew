@@ -217,7 +217,7 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@drawable/medicine" />
+                    app:srcCompat="@drawable/medical" />
 
                 <ImageView
                     android:id="@+id/opth"
@@ -319,11 +319,12 @@
                     android:layout_gravity="center_horizontal"
                     android:text="@string/lphar" />
             </TableRow>
-
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal">
+                android:layout_gravity="center_horizontal"
+                tools:layout_editor_absoluteX="285dp"
+                tools:layout_editor_absoluteY="892dp">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -347,7 +348,6 @@
                     app:srcCompat="@drawable/surgical" />
 
             </TableRow>
-
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -414,4 +414,6 @@
 
 
     </ScrollView>
+
+
 </android.support.constraint.ConstraintLayout>
