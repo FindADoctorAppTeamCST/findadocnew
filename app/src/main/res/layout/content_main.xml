@@ -16,10 +16,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
@@ -113,7 +114,7 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/gynaecology" />
+                    app:srcCompat="@drawable/ent" />
 
             </TableRow>
 
@@ -170,7 +171,7 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/oncology" />
+                    app:srcCompat="@drawable/gynaecology" />
 
             </TableRow>
 
@@ -340,7 +341,7 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@mipmap/surgeon" />
+                    app:srcCompat="@drawable/surgical" />
 
             </TableRow>
 
