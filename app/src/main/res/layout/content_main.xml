@@ -50,7 +50,7 @@
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
-                    app:srcCompat="@drawable/community_health" />
+                    app:srcCompat="@drawable/community" />
 
                 <ImageView
                     android:id="@+id/dent"
