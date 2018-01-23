@@ -20,8 +20,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ImageView den,car,ane,der,ent,gyn,mic,msp,onc,opd,opt,ped,psy,rad,sur;
-    TextView dent,cart,anet,dert,entt,gynt,mict,mspt,onct,opdt,optt,pedt,psyt,radt,surt;
+    ImageView ane,com,den,der,eme,ents,fon,gop,gyn,med,opt,ort,pat,ped,pha,psy,rad,sur;
+    TextView anet,comt,dent,dert,emet,entst,font,gopt,gynt,medt,optt,ortt,patt,pedt,phat,psyt,radt,surt;
     String passValue;
 
     @Override
@@ -39,39 +39,45 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        //Getting Images
         ane=(ImageView)findViewById(R.id.anes);
+        com=(ImageView)findViewById(R.id.comm);
         den=(ImageView)findViewById(R.id.dent);
-        car=(ImageView)findViewById(R.id.card);
         der=(ImageView)findViewById(R.id.derm);
-        ent=(ImageView)findViewById(R.id.ent);
+        eme=(ImageView)findViewById(R.id.emer);
+        ents=(ImageView)findViewById(R.id.ent);
+        fon=(ImageView)findViewById(R.id.fore);
+        gop=(ImageView)findViewById(R.id.gopd);
         gyn=(ImageView)findViewById(R.id.gyna);
-        mic=(ImageView)findViewById(R.id.micr);
-        msp=(ImageView)findViewById(R.id.meds);
-        onc=(ImageView)findViewById(R.id.onco);
-        opd=(ImageView)findViewById(R.id.opd);
+        med=(ImageView)findViewById(R.id.medc);
         opt=(ImageView)findViewById(R.id.opth);
+        ort=(ImageView)findViewById(R.id.ortp);
+        pat=(ImageView)findViewById(R.id.path);
         ped=(ImageView)findViewById(R.id.pedt);
+        pha=(ImageView)findViewById(R.id.phar);
         psy=(ImageView)findViewById(R.id.psyc);
         rad=(ImageView)findViewById(R.id.radi);
         sur=(ImageView)findViewById(R.id.surg);
 
         //Getting Textview Values
-
         anet=(TextView)findViewById(R.id.l1);
+        comt=(TextView)findViewById(R.id.l2);
         dent=(TextView)findViewById(R.id.l3);
-        cart=(TextView)findViewById(R.id.l2);
         dert=(TextView)findViewById(R.id.l4);
-        entt=(TextView)findViewById(R.id.l5);
-        gynt=(TextView)findViewById(R.id.l6);
-        mict=(TextView)findViewById(R.id.l7);
-        mspt=(TextView)findViewById(R.id.l8);
-        onct=(TextView)findViewById(R.id.l9);
-        opdt=(TextView)findViewById(R.id.l10);
+        emet=(TextView)findViewById(R.id.l5);
+        entst=(TextView)findViewById(R.id.l6);
+        font=(TextView)findViewById(R.id.l7);
+        gopt=(TextView)findViewById(R.id.l8);
+        gynt=(TextView)findViewById(R.id.l9);
+        medt=(TextView)findViewById(R.id.l10);
         optt=(TextView)findViewById(R.id.l11);
-        pedt=(TextView)findViewById(R.id.l12);
-        psyt=(TextView)findViewById(R.id.l13);
-        radt=(TextView)findViewById(R.id.l14);
-        surt=(TextView)findViewById(R.id.l15);
+        ortt=(TextView)findViewById(R.id.l12);
+        patt=(TextView)findViewById(R.id.l13);
+        pedt=(TextView)findViewById(R.id.l14);
+        phat=(TextView)findViewById(R.id.l15);
+        psyt=(TextView)findViewById(R.id.l16);
+        radt=(TextView)findViewById(R.id.l17);
+        surt=(TextView)findViewById(R.id.l18);
 
         /*
             *Remove Intent Object  Creation from each OnClickListener if not needed, to decrease the LOC and Garbage
@@ -84,18 +90,18 @@ public class MainActivity extends AppCompatActivity
                 startActivity(i);
             }
         });
-        den.setOnClickListener(new View.OnClickListener() {
+        com.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=dent.getText().toString();
+                passValue=comt.getText().toString();
                 i.putExtra("Value",passValue);
                 startActivity(i);
             }
         });
-        car.setOnClickListener(new View.OnClickListener() {
+        den.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=cart.getText().toString();
+                passValue=dent.getText().toString();
                 i.putExtra("Value",passValue);
                 startActivity(i);
             }
@@ -108,10 +114,34 @@ public class MainActivity extends AppCompatActivity
                 startActivity(i);
             }
         });
-        ent.setOnClickListener(new View.OnClickListener() {
+        eme.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=entt.getText().toString();
+                passValue=emet.getText().toString();
+                i.putExtra("Value",passValue);
+                startActivity(i);
+            }
+        });
+        ents.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),CatTarget.class);
+                passValue=entst.getText().toString();
+                i.putExtra("Value",passValue);
+                startActivity(i);
+            }
+        });
+        fon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),CatTarget.class);
+                passValue=font.getText().toString();
+                i.putExtra("Value",passValue);
+                startActivity(i);
+            }
+        });
+        gop.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),CatTarget.class);
+                passValue=gopt.getText().toString();
                 i.putExtra("Value",passValue);
                 startActivity(i);
             }
@@ -124,34 +154,10 @@ public class MainActivity extends AppCompatActivity
                 startActivity(i);
             }
         });
-        mic.setOnClickListener(new View.OnClickListener() {
+        med.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=mict.getText().toString();
-                i.putExtra("Value",passValue);
-                startActivity(i);
-            }
-        });
-        msp.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=mspt.getText().toString();
-                i.putExtra("Value",passValue);
-                startActivity(i);
-            }
-        });
-        onc.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=onct.getText().toString();
-                i.putExtra("Value",passValue);
-                startActivity(i);
-            }
-        });
-        opd.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i=new Intent(getApplication(),CatTarget.class);
-                passValue=opdt.getText().toString();
+                passValue=medt.getText().toString();
                 i.putExtra("Value",passValue);
                 startActivity(i);
             }
@@ -164,10 +170,34 @@ public class MainActivity extends AppCompatActivity
                 startActivity(i);
             }
         });
+        ort.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),CatTarget.class);
+                passValue=ortt.getText().toString();
+                i.putExtra("Value",passValue);
+                startActivity(i);
+            }
+        });
+        pat.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),CatTarget.class);
+                passValue=patt.getText().toString();
+                i.putExtra("Value",passValue);
+                startActivity(i);
+            }
+        });
         ped.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i=new Intent(getApplication(),CatTarget.class);
                 passValue=pedt.getText().toString();
+                i.putExtra("Value",passValue);
+                startActivity(i);
+            }
+        });
+        pha.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i=new Intent(getApplication(),CatTarget.class);
+                passValue=phat.getText().toString();
                 i.putExtra("Value",passValue);
                 startActivity(i);
             }

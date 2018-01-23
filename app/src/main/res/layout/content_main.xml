@@ -46,7 +46,7 @@
 
 
                 <ImageView
-                    android:id="@+id/card"
+                    android:id="@+id/comm"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
@@ -108,14 +108,14 @@
 
 
                 <ImageView
-                    android:id="@+id/ent"
+                    android:id="@+id/emer"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/emergency" />
 
                 <ImageView
-                    android:id="@+id/gyna"
+                    android:id="@+id/ent"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
@@ -161,21 +161,21 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:id="@+id/micr"
+                    android:id="@+id/fore"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/forensic" />
 
                 <ImageView
-                    android:id="@+id/meds"
+                    android:id="@+id/gopd"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/general_opd" />
 
                 <ImageView
-                    android:id="@+id/onco"
+                    android:id="@+id/gyna"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
@@ -221,7 +221,7 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:id="@+id/opd"
+                    android:id="@+id/medc"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
@@ -235,7 +235,7 @@
                     app:srcCompat="@drawable/opthalmology" />
 
                 <ImageView
-                    android:id="@+id/pedt"
+                    android:id="@+id/ortp"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
@@ -281,21 +281,21 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:id="@+id/psyc"
+                    android:id="@+id/path"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/pathology" />
 
                 <ImageView
-                    android:id="@+id/radi"
+                    android:id="@+id/pedt"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/pediatrics" />
 
                 <ImageView
-                    android:id="@+id/surg"
+                    android:id="@+id/phar"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
@@ -339,21 +339,21 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/psyc"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/psyhiatry" />
 
                 <ImageView
-                    android:id="@+id/rai"
+                    android:id="@+id/radi"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
                     app:srcCompat="@drawable/radiology" />
 
                 <ImageView
-                    android:id="@+id/sur"
+                    android:id="@+id/surg"
                     android:layout_width="@dimen/gridImageSize"
                     android:layout_height="@dimen/gridImageSize"
                     android:padding="10dp"
