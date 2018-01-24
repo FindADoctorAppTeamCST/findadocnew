@@ -17,7 +17,7 @@
         android:layout_width="@dimen/main_icon"
         android:layout_height="@dimen/main_icon"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/jdwnrh_logo" />
+        app:srcCompat="@mipmap/app_logo" />
 
     <TextView
         android:id="@+id/appNameDisplay"

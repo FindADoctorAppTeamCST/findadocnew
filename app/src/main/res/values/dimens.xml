@@ -9,9 +9,14 @@
     <dimen name="line_spacing">5dp</dimen>
 
     <!-- Custom Dimensions -->
+    <!-- The dimensions are in three categories for the small, medium and large device compatibility -->
+    <!-- The name attribute for the dimention resource is in the format name<x> where x is empty for the normal device screen, M for Medium sw600 dp screen and L for Large sw720dp screens -->
     <dimen name="gridImageSize">119dp</dimen>
-    <dimen name="gridImageSize600dp">190dp</dimen>
-    <dimen name="gridImageSize720dp">200dp</dimen>
+
+
     <dimen name="spTitleDoc">25dp</dimen>
+
     <dimen name="bottomRowSpace_mainScreen">25dp</dimen>
+
+    <dimen name="docScreenLog">50dp</dimen>
 </resources>
