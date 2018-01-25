@@ -37,7 +37,7 @@
                 android:contentDescription="@string/loginImageDesc"
                 android:layout_width="157dp"
                 android:layout_height="133dp"
-                app:srcCompat="@mipmap/doctor_login"
+                app:srcCompat="@drawable/doctor_login"
                 android:layout_gravity="center"/>
 
             <ImageView

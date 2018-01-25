@@ -59,7 +59,6 @@
     <!-- Help Activity String Resource -->
     <string name="help_feature"> User Manual </string>
     <string name="about_search">This button helps user to search the doctor through their name or by their specialization.</string>
-
     <string name="about_login">Doctors need to enter their credentials to update their status.</string>
     <string name="about_newsfeed">This feature provides information and alert the users about the latest outbreak of diseases and
         updates the important messages. </string>
@@ -85,7 +84,10 @@
     <!-- Related Apps String Resources -->
     <string name="moreInst">More Apps from JDWNRH</string>
     <string name="title_activity_doctor_login">Sign in</string>
-
+    <string name="docApp">DocApp </string>
+    <string name="queueApp">QueueApp </string>
+    <string name="mhGApp">mhGApp</string>
+    <string name="child">Child Development </string>
     <!-- Strings related to login -->
     <string name="prompt_email">Username</string>
     <string name="prompt_password">Password</string>
