@@ -29,14 +29,15 @@
             android:gravity="center"
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="@dimen/gridImageSize"
                 android:layout_height="@dimen/gridImageSize"
                 android:layout_above="@+id/feedbackSpace"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
+                app:srcCompat="@drawable/feedback" />
 
             <TextView
                 android:id="@+id/feedbackDescription"
@@ -44,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/feedbackInfo"
                 android:textSize="20dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp" />
 
             <EditText
                 android:id="@+id/feedbackSpace"
@@ -66,18 +67,18 @@
                 android:background="@android:color/holo_blue_light"
                 android:textColor="@android:color/white"/>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
             <TextView
                 android:id="@+id/anoHint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/feedbackAno"
-                android:gravity="center"
                 android:layout_marginTop="5dp"
-                android:textStyle="italic"/>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:gravity="center"
+                android:text="@string/feedbackAno"
+                android:textStyle="italic" />
         </LinearLayout>
     </ScrollView>
 
