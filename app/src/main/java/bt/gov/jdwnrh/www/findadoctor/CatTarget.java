@@ -35,6 +35,7 @@ public class CatTarget extends AppCompatActivity {
     private ArrayList<String> statusArr=new ArrayList<String>();
     private ArrayList<String> desigArr=new ArrayList<String>();
     private ArrayList<String> dateArr=new ArrayList<String>();
+    String name="Khusant",desig="Dev",stat="IN";
 
 
     @Override
@@ -48,10 +49,6 @@ public class CatTarget extends AppCompatActivity {
 
         listView=(ListView)findViewById(R.id.list);
 
-        String name="";
-        String desig="";
-        String stat="";
-
         RequestQueue queue = Volley.newRequestQueue(CatTarget.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -63,6 +60,7 @@ public class CatTarget extends AppCompatActivity {
                     statusArr.add(jsonResp.getString("status"));
                     desigArr.add(jsonResp.getString("designation"));
                     dateArr.add(jsonResp.getString("till"));
+                    //name=jsonResp.getString("name");
                     Toast.makeText(CatTarget.this, ""+nameArr.get(0), Toast.LENGTH_SHORT).show();
 
                 }  catch (JSONException jsonError) {
@@ -90,7 +88,7 @@ public class CatTarget extends AppCompatActivity {
         };
         queue.add(request);
 
-        for(int i=0;i<1;i++) {
+        for(int i=0;i<15;i++) {
             item = new HashMap<String, String>();
             item.put("doc_name", name);
             item.put("doc_designation", desig);
