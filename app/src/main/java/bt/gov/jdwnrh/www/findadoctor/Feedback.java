@@ -29,7 +29,7 @@ import java.util.Map;
 public class Feedback extends AppCompatActivity {
     EditText editText;
     Context context;
-    String url = "http://172.25.33.189/findadocandroid/feedback.php";
+    String url = "http://findadoc.dx.am/findadocandroid/feedback.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,12 +78,13 @@ public class Feedback extends AppCompatActivity {
                         });
                         alertdialog = builder.create();
                         alertdialog.show();
+                        editText.setText("");
                     } else {
                         builder.setMessage(" Error: Feedback Could Not Be Submitted. Try Again");
                         builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(context, "Thank You. Have a nice day.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context, "Have a nice day.", Toast.LENGTH_SHORT).show();
                             }
                         });
                         alertdialog = builder.create();
@@ -98,7 +99,7 @@ public class Feedback extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(Feedback.this, "my error :" + error, Toast.LENGTH_LONG).show();
+                Toast.makeText(Feedback.this, "No Internet Connection\nYou need an Active Internet Connection to send Feedback", Toast.LENGTH_LONG).show();
                 Log.i("My error", "" + error);
             }
         }) {
