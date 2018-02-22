@@ -110,24 +110,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HelpB"
-            android:label="@string/help_feature"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".HelpC"
-            android:label="@string/help_feature"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".RelatedApps"
             android:label="@string/moreapps"
             android:parentActivityName=".MainActivity"
