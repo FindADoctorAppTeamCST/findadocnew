@@ -1,5 +1,6 @@
 package bt.gov.jdwnrh.www.findadoctor;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
@@ -9,7 +10,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -29,12 +32,16 @@ import java.util.Map;
 public class Feedback extends AppCompatActivity {
     EditText editText;
     Context context;
-    String url = "http://172.25.33.189/findadocandroid/feedback.php";
+    ProgressBar progressBar;
+    Button subBut;
+    String url = "http://findadoc.dx.am/findadocandroid/feedback.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         context = this;
+        subBut=(Button)findViewById(R.id.button);
+        progressBar=(ProgressBar)findViewById(R.id.progressBar1);
         editText = (EditText) findViewById(R.id.feedbackSpace);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -45,7 +52,6 @@ public class Feedback extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 String s = editText.getText().toString();
-                Toast.makeText(Feedback.this, "", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -58,6 +64,8 @@ public class Feedback extends AppCompatActivity {
     //Feedback
     public void SubmitFeedback(View view) {
         editText = (EditText) findViewById(R.id.feedbackSpace);
+        progressBar.setVisibility(View.VISIBLE);
+        subBut.setVisibility(View.GONE);
         RequestQueue queue = Volley.newRequestQueue(Feedback.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -78,28 +86,36 @@ public class Feedback extends AppCompatActivity {
                         });
                         alertdialog = builder.create();
                         alertdialog.show();
+                        subBut.setVisibility(View.VISIBLE);
+                        progressBar.setVisibility(View.GONE);
+                        editText.setText("");
                     } else {
                         builder.setMessage(" Error: Feedback Could Not Be Submitted. Try Again");
                         builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(context, "Thank You. Have a nice day.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context, "Have a nice day.", Toast.LENGTH_SHORT).show();
                             }
                         });
                         alertdialog = builder.create();
                         alertdialog.show();
+                        subBut.setVisibility(View.VISIBLE);
+                        progressBar.setVisibility(View.GONE);
                     }
 
                 }  catch (JSONException jsonError) {
                     Toast.makeText(Feedback.this, "Error Submitting Feedback", Toast.LENGTH_SHORT).show();
+                    subBut.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(Feedback.this, "my error :" + error, Toast.LENGTH_LONG).show();
-                Log.i("My error", "" + error);
+                Toast.makeText(Feedback.this, "No Internet Connection\nYou need an Active Internet Connection to send Feedback", Toast.LENGTH_LONG).show();
+                subBut.setVisibility(View.VISIBLE);
+                progressBar.setVisibility(View.GONE);
             }
         }) {
             @Override
@@ -112,5 +128,8 @@ public class Feedback extends AppCompatActivity {
             }
         };
         queue.add(request);
+
+
+
     }
 }
