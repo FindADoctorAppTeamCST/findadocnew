@@ -51,20 +51,14 @@
     <string name="feedbackInfo">You can provide feedback for the hospital, as well as app.</string>
 
     <!-- About Us Section String Resource Reference -->
-    <string name="about_us_title">Jigme Dorji Wangchuck National Referral Hospital, Thimphu.</string>
-    <string name="about_thimphu">The JDWNRH is the main hospital in Bhutan, located in the capital of Bhutan,
-        Thimphu. It was established in 1972, and provides free basic medical treatment as well as advanced
-        surgeries and emergency services to citizens from all over the country. It provides the most sophisticated
-        health evaluation and management services in the country.</string>
     <string name="App_heading">Find A Doctor App</string>
-    <string name="about_App">This Android App Find A Doctor is to check the availability of doctors in the hospital
-        especially in the JDWNRH. This App provides platform to avail the services facilitated by doctors and their
-        availability in the hospital if users have installed this app.</string>
+    <string name="about_App">This Android App Find A Doctor is to check the availability of doctors in Jigme Dorji Wangchuck National Referral Hospital. This App provides platform to avail the services facilitated by doctors and theiravailability in the hospital if users have installed this app.</string>
+    <string name="search1">The users can search the doctors using the search button by their name or their department.</string>
+    <string name="notification">The notification feature will keep the users up to date with the information about the hospital, be it outbreak of diseases or any network services failure.</string>
 
     <!-- Help Activity String Resource -->
     <string name="help_feature"> User Manual </string>
     <string name="about_search">This button helps user to search the doctor through their name or by their specialization.</string>
-
     <string name="about_login">Doctors need to enter their credentials to update their status.</string>
     <string name="about_newsfeed">This feature provides information and alert the users about the latest outbreak of diseases and
         updates the important messages. </string>
@@ -90,7 +84,10 @@
     <!-- Related Apps String Resources -->
     <string name="moreInst">More Apps from JDWNRH</string>
     <string name="title_activity_doctor_login">Sign in</string>
-
+    <string name="docApp">DocApp </string>
+    <string name="queueApp">QueueApp </string>
+    <string name="mhGApp">mhGApp</string>
+    <string name="child">Child Development </string>
     <!-- Strings related to login -->
     <string name="prompt_email">Username</string>
     <string name="prompt_password">Password</string>

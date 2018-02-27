@@ -5,20 +5,22 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:id="@+id/docName"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Name"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="10dp"
+                android:layout_weight="1"/>
 
             <TextView
                 android:id="@+id/status"
@@ -26,27 +28,32 @@
                 android:layout_height="wrap_content"
                 android:text="Status"
                 android:textSize="20sp"
-                android:textColor="@android:color/holo_green_dark"/>
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/fab_margin">
 
             <TextView
                 android:id="@+id/docDesig"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Designation"
                 android:textColor="@android:color/holo_blue_dark"
                 android:textSize="15sp"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="10dp"
+                android:layout_weight="1"/>
 
             <TextView
                 android:id="@+id/till"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date Till" />
+                android:text="Date Till"
+                android:layout_weight="1"/>
         </TableRow>
 
     </TableLayout>

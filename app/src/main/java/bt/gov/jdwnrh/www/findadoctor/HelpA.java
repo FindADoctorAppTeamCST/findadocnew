@@ -12,7 +12,4 @@ public class HelpA extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_a);
     }
-    public void onClick(View view){
-        startActivity(new Intent(HelpA.this, HelpB.class));
-    }
 }

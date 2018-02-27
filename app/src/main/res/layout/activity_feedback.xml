@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bt.gov.jdwnrh.www.findadoctor.Feedback">
+    tools:context="bt.gov.jdwnrh.www.findadoctor.Feedback"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="8dp"
         tools:layout_constraintLeft_creator="1"
@@ -29,22 +31,23 @@
             android:gravity="center"
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="@dimen/gridImageSize"
-                android:layout_height="@dimen/gridImageSize"
+                android:layout_width="98dp"
+                android:layout_height="86dp"
                 android:layout_above="@+id/feedbackSpace"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
+                app:srcCompat="@drawable/feedback" />
 
             <TextView
                 android:id="@+id/feedbackDescription"
-                android:layout_width="match_parent"
+                android:layout_width="310dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:text="@string/feedbackInfo"
-                android:textSize="20dp"
-                android:layout_marginTop="5dp"/>
+                android:textSize="20dp" />
 
             <EditText
                 android:id="@+id/feedbackSpace"
@@ -66,18 +69,18 @@
                 android:background="@android:color/holo_blue_light"
                 android:textColor="@android:color/white"/>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
             <TextView
                 android:id="@+id/anoHint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/feedbackAno"
-                android:gravity="center"
                 android:layout_marginTop="5dp"
-                android:textStyle="italic"/>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:gravity="center"
+                android:text="@string/feedbackAno"
+                android:textStyle="italic" />
         </LinearLayout>
     </ScrollView>
 
