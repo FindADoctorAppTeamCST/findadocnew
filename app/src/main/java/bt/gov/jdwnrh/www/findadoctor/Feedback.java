@@ -64,72 +64,76 @@ public class Feedback extends AppCompatActivity {
     //Feedback
     public void SubmitFeedback(View view) {
         editText = (EditText) findViewById(R.id.feedbackSpace);
-        progressBar.setVisibility(View.VISIBLE);
-        subBut.setVisibility(View.GONE);
-        RequestQueue queue = Volley.newRequestQueue(Feedback.this);
-        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONObject jsonResp=new JSONObject(response);
-                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                    builder.setTitle("Feedback Status: ");
-                    AlertDialog alertdialog;
-                    if(jsonResp.getString("resp").equals("1")) {
-                        //dialog box
-                        builder.setMessage(" Feedback Submitted Successfully.");
-                        builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(context, "Thank You. Have a nice day.", Toast.LENGTH_SHORT).show();
-                            }
-                        });
-                        alertdialog = builder.create();
-                        alertdialog.show();
-                        subBut.setVisibility(View.VISIBLE);
-                        progressBar.setVisibility(View.GONE);
-                        editText.setText("");
-                    } else {
-                        builder.setMessage(" Error: Feedback Could Not Be Submitted. Try Again");
-                        builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(context, "Have a nice day.", Toast.LENGTH_SHORT).show();
-                            }
-                        });
-                        alertdialog = builder.create();
-                        alertdialog.show();
+        if(editText.getText().toString().length()==0){
+            Toast.makeText(context, "Empty Feedback cannot be sent!", Toast.LENGTH_SHORT).show();
+
+        }else {
+            progressBar.setVisibility(View.VISIBLE);
+            subBut.setVisibility(View.GONE);
+            RequestQueue queue = Volley.newRequestQueue(Feedback.this);
+            StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    try {
+                        JSONObject jsonResp = new JSONObject(response);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setTitle("Feedback Status: ");
+                        AlertDialog alertdialog;
+                        if (jsonResp.getString("resp").equals("1")) {
+                            //dialog box
+                            builder.setMessage(" Feedback Submitted Successfully.");
+                            builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    Toast.makeText(context, "Thank You. Have a nice day.", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                            alertdialog = builder.create();
+                            alertdialog.show();
+                            subBut.setVisibility(View.VISIBLE);
+                            progressBar.setVisibility(View.GONE);
+                            editText.setText("");
+                        } else {
+                            builder.setMessage(" Error: Feedback Could Not Be Submitted. Try Again");
+                            builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    Toast.makeText(context, "Have a nice day.", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                            alertdialog = builder.create();
+                            alertdialog.show();
+                            subBut.setVisibility(View.VISIBLE);
+                            progressBar.setVisibility(View.GONE);
+                        }
+
+                    } catch (JSONException jsonError) {
+                        Toast.makeText(Feedback.this, "Error Submitting Feedback", Toast.LENGTH_SHORT).show();
                         subBut.setVisibility(View.VISIBLE);
                         progressBar.setVisibility(View.GONE);
                     }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
 
-                }  catch (JSONException jsonError) {
-                    Toast.makeText(Feedback.this, "Error Submitting Feedback", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Feedback.this, "No Internet Connection\nYou need an Active Internet Connection to send Feedback", Toast.LENGTH_LONG).show();
                     subBut.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.GONE);
                 }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+            }) {
+                @Override
+                protected Map<String, String> getParams() throws AuthFailureError {
 
-                Toast.makeText(Feedback.this, "No Internet Connection\nYou need an Active Internet Connection to send Feedback", Toast.LENGTH_LONG).show();
-                subBut.setVisibility(View.VISIBLE);
-                progressBar.setVisibility(View.GONE);
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
+                    Map<String, String> map = new HashMap<String, String>();
+                    map.put("feedback", editText.getText().toString());
 
-                Map<String, String> map = new HashMap<String, String>();
-                map.put("feedback", editText.getText().toString());
-
-                return map;
-            }
-        };
-        queue.add(request);
+                    return map;
+                }
+            };
+            queue.add(request);
 
 
-
+        }
     }
 }
