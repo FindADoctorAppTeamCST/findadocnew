@@ -22,6 +22,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class CatTarget extends AppCompatActivity {
@@ -31,26 +32,24 @@ public class CatTarget extends AppCompatActivity {
     ArrayList<HashMap<String,String>> list = new ArrayList<HashMap<String,String>>();
     HashMap<String,String> item;
     ListView listView;
-    private ArrayList<String> nameArr=new ArrayList<String>();
-    private ArrayList<String> statusArr=new ArrayList<String>();
-    private ArrayList<String> desigArr=new ArrayList<String>();
-    private ArrayList<String> dateArr=new ArrayList<String>();
+    List<String> nameArr=new ArrayList<String>();
+    List<String> statusArr=new ArrayList<String>();
+    List<String> desigArr=new ArrayList<String>();
+    List<String> dateArr=new ArrayList<String>();
 
+    String name="Khusant Chhetri",desig="Developer",stat="IN";
+    int size;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat_target);
         titleStr=(TextView)findViewById(R.id.speTitle);
-        //passTitle=getIntent().getExtras().getString("Value");
-        passTitle="Pharmacology";
+        passTitle=getIntent().getExtras().getString("Value");
         titleStr.setText(passTitle);
 
-        listView=(ListView)findViewById(R.id.list);
 
-        String name="";
-        String desig="";
-        String stat="";
+        listView=(ListView)findViewById(R.id.list);
 
         RequestQueue queue = Volley.newRequestQueue(CatTarget.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -63,7 +62,8 @@ public class CatTarget extends AppCompatActivity {
                     statusArr.add(jsonResp.getString("status"));
                     desigArr.add(jsonResp.getString("designation"));
                     dateArr.add(jsonResp.getString("till"));
-                    Toast.makeText(CatTarget.this, ""+nameArr.get(0), Toast.LENGTH_SHORT).show();
+                    //name=jsonResp.getString("name");
+                    Toast.makeText(CatTarget.this, ""+nameArr.size(), Toast.LENGTH_SHORT).show();
 
                 }  catch (JSONException jsonError) {
                     Toast.makeText(CatTarget.this, "Error Fetching Data", Toast.LENGTH_SHORT).show();
@@ -91,10 +91,13 @@ public class CatTarget extends AppCompatActivity {
         queue.add(request);
 
         for(int i=0;i<1;i++) {
+            size=nameArr.size();
+            //desig=desigArr.get(i);
+            //stat=statusArr.get(i);
             item = new HashMap<String, String>();
-            item.put("doc_name", name);
-            item.put("doc_designation", desig);
-            item.put("doc_status", stat);
+                item.put("doc_name", name);
+                item.put("doc_designation", desig);
+                item.put("doc_status", stat);
             list.add(item);
         }
 
@@ -106,7 +109,7 @@ public class CatTarget extends AppCompatActivity {
 
 
     //This array will be updated by the entry from the database.
-    //The database connection functionn from the above wilgl add 3 values to the list array i.e. Name, Designation, Status, and 4 values with added date_till vaue if the doctor is out of station.
+    //The database connection function from the above wilgl add 3 values to the list array i.e. Name, Designation, Status, and 4 values with added date_till vaue if the doctor is out of station.
     // Reference Array... Delete this after the implementation of arraylist...
     // private String[][] nameAndDesig={{"Khusant Chhetri","Developer","IN"},{"Karma Dorji","Analyst","OUT"},{"Tula Ram","Technical Writer","IN"},{"Deepika Suberi","Designer","IN"},{"Meg Nath Sharma","Analyst","IN"},{"Tshering Penjore","Developer","IN"},{"Kinzang Pelden","Analyst","OUT"},{"Gagen Ghalley","Developer","IN"},{"Sangay Lhaden","Developer","OUT"}};
 
