@@ -43,16 +43,10 @@ public class RelatedApps extends AppCompatActivity {
                    public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                        String Selecteditem = related_apps[+position];
                        Toast.makeText(RelatedApps.this, Selecteditem,Toast.LENGTH_SHORT).show();
+                       startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse(new Links().playstoreLink)));
                    }
                }
-        );
+     );
+    }
 
-    }
-    public void onImageClick(View v){
-        Toast.makeText(this,"View this app on Playstore",Toast.LENGTH_SHORT).show();
-        startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse(new Links().playstoreLink)));
-    }
-    public void onImageClickError(View v){
-        Toast.makeText(this,"App development is under process by CST",Toast.LENGTH_SHORT).show();
-    }
 }
