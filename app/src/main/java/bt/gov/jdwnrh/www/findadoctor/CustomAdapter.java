@@ -10,20 +10,35 @@ import android.widget.TextView;
 
 public class CustomAdapter extends ArrayAdapter<String> {
 
-    CustomAdapter(Context context, String[] related_apps){
+    String [] related_apps=
+            {
+                    "mhGAP",
+                    "Child_screening",
+                    "queue_app"
+            };
+    Integer[] imageid =
+            {
+                    R.drawable.thimphu,
+                    R.drawable.jdwnrh_logo,
+                    R.drawable.app_logo,
+            };
+
+    CustomAdapter(Context context, String[] related_apps, Integer[] imageid)
+    {
         super(context,R.layout.custom_row, related_apps );
+
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
         LayoutInflater relatedInflater = LayoutInflater.from(getContext());
-        View customView=relatedInflater.inflate(R.layout.custom_row, parent, false);
+        View rowView=relatedInflater.inflate(R.layout.custom_row, null, true);
 
         String relatedItems= getItem(position);
-        TextView textviewid =(TextView) customView.findViewById(R.id.textviewid);
-        ImageView imageViewid =(ImageView) customView.findViewById(R.id.imageViewid);
+        TextView textviewid =(TextView) rowView.findViewById(R.id.textviewid);
+        ImageView imageViewid =(ImageView) rowView.findViewById(R.id.imageViewid);
 
-        textviewid.setText(relatedItems);
-        imageViewid.setImageResource(R.drawable.thimphu);
-        return customView;
+        textviewid.setText(related_apps[position]);
+        imageViewid.setImageResource(imageid[position]);
+        return rowView;
     }
 }
