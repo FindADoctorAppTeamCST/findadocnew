@@ -90,5 +90,4 @@
                 android:textStyle="italic" />
         </LinearLayout>
     </ScrollView>
-
 </android.support.constraint.ConstraintLayout>
