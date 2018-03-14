@@ -13,7 +13,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
     String [] related_apps=
             {
                     "mhGAP",
-                    "Child_screening",
+                    "Doctor's Appointment",
                     "queue_app"
             };
     Integer[] imageid =

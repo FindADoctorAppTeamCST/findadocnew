@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageViewid"
-        android:layout_width="@dimen/main_icon"
-        android:layout_height="@dimen/main_icon"
+        android:layout_width="@dimen/docScreenLog"
+        android:layout_height="@dimen/docScreenLog"
         android:layout_margin="@dimen/line_spacing"
         app:srcCompat="@drawable/thimphu" />
 

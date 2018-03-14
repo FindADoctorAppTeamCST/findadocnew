@@ -18,7 +18,7 @@ public class RelatedApps extends AppCompatActivity {
     String [] related_apps=
             {
                     "mhGAP",
-                    "Child_screening",
+                    "Doctor's Appointment",
                     "queue_app"
             };
 
