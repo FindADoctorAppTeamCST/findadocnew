@@ -14,9 +14,10 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+/*public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME="jdwnrh_findadoc";
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null,1);
     }
 }
+*/
