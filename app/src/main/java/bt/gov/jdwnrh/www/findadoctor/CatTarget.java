@@ -90,14 +90,14 @@ public class CatTarget extends AppCompatActivity {
         };
         queue.add(request);
 
-        for(int i=0;i<1;i++) {
+        for(int i=0;i<nameAndDesig.length;i++) {
             size=nameArr.size();
             //desig=desigArr.get(i);
             //stat=statusArr.get(i);
             item = new HashMap<String, String>();
-                item.put("doc_name", name);
-                item.put("doc_designation", desig);
-                item.put("doc_status", stat);
+                item.put("doc_name", nameAndDesig[i][0]);
+                item.put("doc_designation", nameAndDesig[i][1]);
+                item.put("doc_status", nameAndDesig[i][2]);
             list.add(item);
         }
 
@@ -111,6 +111,6 @@ public class CatTarget extends AppCompatActivity {
     //This array will be updated by the entry from the database.
     //The database connection function from the above wilgl add 3 values to the list array i.e. Name, Designation, Status, and 4 values with added date_till vaue if the doctor is out of station.
     // Reference Array... Delete this after the implementation of arraylist...
-    // private String[][] nameAndDesig={{"Khusant Chhetri","Developer","IN"},{"Karma Dorji","Analyst","OUT"},{"Tula Ram","Technical Writer","IN"},{"Deepika Suberi","Designer","IN"},{"Meg Nath Sharma","Analyst","IN"},{"Tshering Penjore","Developer","IN"},{"Kinzang Pelden","Analyst","OUT"},{"Gagen Ghalley","Developer","IN"},{"Sangay Lhaden","Developer","OUT"}};
+    private String[][] nameAndDesig={{"Khusant Chhetri","Developer","IN"},{"Karma Dorji","Analyst","OUT"},{"Tula Ram","Technical Writer","IN"},{"Deepika Suberi","Designer","OUT"},{"Meg Nath Sharma","Analyst","IN"},{"Tshering Penjore","Developer","IN"},{"Kinzang Pelden","Analyst","OUT"},{"Gagen Ghalley","Developer","IN"},{"Sangay Lhaden","Developer","OUT"}};
 
 }
