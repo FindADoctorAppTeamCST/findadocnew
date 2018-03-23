@@ -34,7 +34,11 @@ import java.util.List;
 
 /**
  * A login screen that offers login via username/password.
+ * This class connects to the back end and authenticates the login against the stored values of the username and password in the database.
+ * If Connection is a success, it loads the profile page of the doctor.
  */
+
+
 public class DoctorLogin extends AppCompatActivity {
     // UI references.
     private AutoCompleteTextView mUsernameView;
@@ -166,10 +170,6 @@ public class DoctorLogin extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onLoaderReset(Loader<Cursor> cursorLoader) {
-
-    }
     /**
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
