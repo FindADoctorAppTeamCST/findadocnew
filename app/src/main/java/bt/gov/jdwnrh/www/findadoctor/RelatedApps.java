@@ -22,6 +22,13 @@ public class RelatedApps extends AppCompatActivity {
                     "queue_app"
             };
 
+    String [] description=
+            {
+                    "description1",
+                    "description2",
+                    "description3"
+            };
+
     Integer[] imageid =
             {
                     R.drawable.thimphu,
@@ -34,7 +41,7 @@ public class RelatedApps extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_related_apps);
 
-        CustomAdapter relatedAppAdapter= new CustomAdapter(this,related_apps,imageid);
+        CustomAdapter relatedAppAdapter= new CustomAdapter(this,related_apps,description,imageid);
         ListView relatedListView=(ListView) findViewById(R.id.relateListView);
         relatedListView.setAdapter(relatedAppAdapter);
         relatedListView.setOnItemClickListener(
