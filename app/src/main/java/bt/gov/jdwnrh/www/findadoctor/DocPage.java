@@ -1,4 +1,8 @@
 package bt.gov.jdwnrh.www.findadoctor;
+/**
+ * This Class is replaced by DocProfile.java
+ * However, this class is not to be deleted till the completion of DocProfile.java, as this file may be needed for reference
+ */
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

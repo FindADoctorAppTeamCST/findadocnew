@@ -1,6 +1,7 @@
 package bt.gov.jdwnrh.www.findadoctor;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
@@ -14,10 +15,31 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 
+<<<<<<< HEAD
 /*public class DatabaseHelper extends SQLiteOpenHelper {
+=======
+public class DatabaseHelper extends SQLiteOpenHelper {
+    //Final Variables Declarations go here
+>>>>>>> 93d5079c6ed25bff1dd6090b0e2b166ad49f2a61
     public static final String DATABASE_NAME="jdwnrh_findadoc";
+
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null,1);
     }
+
+    //Overriding Methods from SQLite Class
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        String queryCreate="";
+        db.execSQL(queryCreate);
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db,int oldVersion, int newVersion) {
+        db.execSQL("");
+    }
+
+    //Other Methods go here...
+
 }
 */
