@@ -206,7 +206,7 @@ public class DoctorLogin extends AppCompatActivity {
                             if (jsonResp.getString("resp").equals("1")) {
                                 startActivity(new Intent(getApplication(), DocProfile.class));
                             } else {
-                                builder.setMessage(" Error: Username or Password is Incorrect");
+/*                                builder.setMessage(" Error: Username or Password is Incorrect");
                                 builder.setPositiveButton("Try Again", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -214,7 +214,9 @@ public class DoctorLogin extends AppCompatActivity {
                                     }
                                 });
                                 alertdialog = builder.create();
-                                alertdialog.show();
+                                alertdialog.show();*/
+                                mPasswordView.setError(getString(R.string.error_incorrect_password));
+                                mPasswordView.requestFocus();
                             }
 
                         } catch (JSONException jsonError) {
@@ -246,7 +248,7 @@ public class DoctorLogin extends AppCompatActivity {
             return true;
         }
 
-        @Override
+ /*       @Override
         protected void onPostExecute(final Boolean success) {
             showProgress(false);
 
@@ -257,7 +259,7 @@ public class DoctorLogin extends AppCompatActivity {
                 mPasswordView.requestFocus();
             }
         }
-
+*/
         @Override
         protected void onCancelled() {
             showProgress(false);
