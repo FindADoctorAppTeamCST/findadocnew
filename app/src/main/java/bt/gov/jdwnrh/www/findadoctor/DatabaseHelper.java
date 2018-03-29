@@ -1,4 +1,4 @@
-package bt.gov.jdwnrh.www.findadoctor;
+/*package bt.gov.jdwnrh.www.findadoctor;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -19,5 +19,9 @@ import android.database.sqlite.SQLiteOpenHelper;
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null,1);
     }
+<<<<<<< HEAD
+}*/
+=======
 }
 */
+>>>>>>> master

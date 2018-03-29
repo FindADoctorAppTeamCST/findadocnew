@@ -121,7 +121,7 @@ public class Feedback extends AppCompatActivity {
                     subBut.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.GONE);
                 }
-            }) {
+            }) { //$feed=$_POST['feedback'];
                 @Override
                 protected Map<String, String> getParams() throws AuthFailureError {
 
