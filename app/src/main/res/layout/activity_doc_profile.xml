@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context="bt.gov.jdwnrh.www.findadoctor.DocProfile">
 
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/imageid1"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                app:srcCompat="@mipmap/doctor_login" />
+
+            <TextView
+                android:id="@+id/textid1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="Employee ID : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textid2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_margin="10dp"
+                android:text="Name : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textid3"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_margin="10dp"
+                android:text="Designation : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textid4"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_margin="10dp"
+                android:text="Department : "
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switchid1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:text="Status : "
+                android:textSize="18sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.21"
+                android:headerBackground="#7fa87f" />
+
+            <Button
+                android:id="@+id/buttonid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:text="Update"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
