@@ -13,9 +13,17 @@ public class CustomAdapter extends ArrayAdapter<String> {
     String [] related_apps=
             {
                     "mhGAP",
-                    "Child_screening",
+                    "Doctor's Appointment",
                     "queue_app"
             };
+
+    String [] description =
+            {
+                    "description1",
+                    "description2",
+                    "description3"
+            };
+
     Integer[] imageid =
             {
                     R.drawable.thimphu,
@@ -23,7 +31,7 @@ public class CustomAdapter extends ArrayAdapter<String> {
                     R.drawable.app_logo,
             };
 
-    CustomAdapter(Context context, String[] related_apps, Integer[] imageid)
+    CustomAdapter(Context context, String[] related_apps, String[] description, Integer[] imageid)
     {
         super(context,R.layout.custom_row, related_apps );
 
@@ -35,9 +43,11 @@ public class CustomAdapter extends ArrayAdapter<String> {
 
         String relatedItems= getItem(position);
         TextView textviewid =(TextView) rowView.findViewById(R.id.textviewid);
+        TextView descriptionid =(TextView) rowView.findViewById(R.id.textviewid1);
         ImageView imageViewid =(ImageView) rowView.findViewById(R.id.imageViewid);
 
         textviewid.setText(related_apps[position]);
+        descriptionid.setText(description[position]);
         imageViewid.setImageResource(imageid[position]);
         return rowView;
     }
