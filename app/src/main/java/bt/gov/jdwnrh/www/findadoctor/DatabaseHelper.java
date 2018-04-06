@@ -15,12 +15,9 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 
-<<<<<<< HEAD
+
 /*public class DatabaseHelper extends SQLiteOpenHelper {
-=======
-public class DatabaseHelper extends SQLiteOpenHelper {
     //Final Variables Declarations go here
->>>>>>> 93d5079c6ed25bff1dd6090b0e2b166ad49f2a61
     public static final String DATABASE_NAME="jdwnrh_findadoc";
 
     public DatabaseHelper(Context context) {
