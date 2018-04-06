@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/relatedID"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageViewid"
-        android:layout_width="@dimen/main_icon"
-        android:layout_height="@dimen/main_icon"
-        android:layout_margin="@dimen/line_spacing"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
         app:srcCompat="@drawable/thimphu" />
 
     <TextView
         android:id="@+id/textviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewid"
+        android:text="TextView"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/textviewid1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/spTitleDoc"
+        android:layout_toRightOf="@+id/imageViewid"
+        android:layout_below="@+id/textviewid"
+        android:text="description come here"
+        android:textSize="15sp" />
 
-        android:text="TextView" />
-
-</LinearLayout>
+</RelativeLayout>
