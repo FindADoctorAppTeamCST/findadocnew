@@ -73,7 +73,8 @@
                 android:textSize="18sp" />
 
             <Switch
-                android:id="@+id/switchid1"
+                android:id="@+id/idSwitch"
+                android:onClick="onSwitchClick"
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:layout_margin="10dp"
@@ -81,7 +82,7 @@
                 android:textSize="18sp" />
 
             <DatePicker
-                android:id="@+id/datePicker"
+                android:id="@+id/dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
