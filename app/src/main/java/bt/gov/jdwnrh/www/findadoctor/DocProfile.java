@@ -22,11 +22,11 @@ public class DocProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doc_profile);
         aSwitch = (Switch) findViewById(R.id.idSwitch);
-        aSwitch.setChecked(true);
+        aSwitch.setChecked(true); //retrieve from database
         datePicker=(DatePicker) findViewById(R.id.dp);
         datePicker.setVisibility(View.GONE);
     }
-    public void onSwitchClick(View v){
+    public void onSwitchClick(View v) {
         if(aSwitch.isChecked()) {
             Toast.makeText(this, "Doctor is IN", Toast.LENGTH_SHORT).show();
             datePicker.setVisibility(View.GONE);
