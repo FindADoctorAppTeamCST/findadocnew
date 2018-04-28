@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_margin="10dp"
-                android:text="Employee ID : "
+                android:text="Employee ID : 165"
                 android:textSize="18sp" />
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
                 android:layout_margin="10dp"
-                android:text="Name : "
+                android:text="Name : Dr. Tashi Tobgay"
                 android:textSize="18sp" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
                 android:layout_margin="10dp"
-                android:text="Designation : "
+                android:text="Designation : Pathologist"
                 android:textSize="18sp" />
 
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="41dp"
                 android:layout_margin="10dp"
-                android:text="Department : "
+                android:text="Department : Pathology"
                 android:textSize="18sp" />
 
             <Switch
@@ -90,11 +90,12 @@
                 android:headerBackground="#7fa87f" />
 
             <Button
-                android:id="@+id/buttonid1"
+                android:id="@+id/updt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@color/colorAccent"
+                android:onClick="updateStatus"
                 android:text="Update"
                 android:textColor="#ffffff" />
         </LinearLayout>

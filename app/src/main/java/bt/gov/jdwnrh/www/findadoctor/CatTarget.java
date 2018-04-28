@@ -111,6 +111,6 @@ public class CatTarget extends AppCompatActivity {
     //This array will be updated by the entry from the database.
     //The database connection function from the above wilgl add 3 values to the list array i.e. Name, Designation, Status, and 4 values with added date_till vaue if the doctor is out of station.
     // Reference Array... Delete this after the implementation of arraylist...
-    private String[][] nameAndDesig={{"Khusant Chhetri","Developer","IN"},{"Karma Dorji","Analyst","OUT"},{"Tula Ram","Technical Writer","IN"},{"Deepika Suberi","Designer","OUT"},{"Meg Nath Sharma","Analyst","IN"},{"Tshering Penjore","Developer","IN"},{"Kinzang Pelden","Analyst","OUT"},{"Gagen Ghalley","Developer","IN"},{"Sangay Lhaden","Developer","OUT"}};
+    private String[][] nameAndDesig={{"Yangchen","Medical Specialist","IN"},{"Yeshi Penjor","Cardiologist","OUT"},{"G.P. Dhakal","Gastroentrologist","IN"},{"Minjur Dorji","Medical Specialist","IN"},{"Sonam Yangchen","Medical Specialist","OUT"},{"Kesang Namgyel","Medical Specialist","IN"},{"Gaki Nima","Chest Specialist","OUT"},{"Mahesh Gurung","Cardiologist","IN"},{"Gary G","Intensive Pulmonologist","OUT"}};
 
 }
