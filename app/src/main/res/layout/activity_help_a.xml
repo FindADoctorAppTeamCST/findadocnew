@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
                 android:layout_marginBottom="8dp"
-                android:text="Newsfeed18sp feature"
+                android:text="Newsfeed Feature"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 

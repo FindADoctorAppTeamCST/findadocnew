@@ -24,9 +24,9 @@ public class RelatedApps extends AppCompatActivity {
 
     String [] description=
             {
-                    "description1",
-                    "description2",
-                    "description3"
+                    "Under Development",
+                    "An App to make appointment during off-hours at JDWNRH",
+                    "Under Development"
             };
 
     Integer[] imageid =
