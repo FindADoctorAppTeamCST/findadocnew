@@ -54,9 +54,11 @@ public class DocProfile extends AppCompatActivity {
         if(aSwitch.isChecked()) {
             Toast.makeText(this, "Doctor is IN", Toast.LENGTH_SHORT).show();
             datePicker.setVisibility(View.GONE);
+            statStr="1";
         } else {
             Toast.makeText(this, "Doctor is OUT. Please Select till WHEN", Toast.LENGTH_SHORT).show();
             datePicker.setVisibility(View.VISIBLE);
+            statStr="0";
         }
     }
 
@@ -86,8 +88,8 @@ public class DocProfile extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> map = new HashMap<String, String>();
-                map.put("empid", statStr);
-
+                map.put("stat", statStr);
+                map.put("emid", passEmp);
                 return map;
             }
         };
