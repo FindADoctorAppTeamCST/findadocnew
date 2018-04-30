@@ -83,8 +83,6 @@ public class DocLogin extends AppCompatActivity {
 
     public void attemptLogin() {
         pb.setVisibility(View.VISIBLE);
-        startActivity(new Intent(getApplication(),DocProfile.class));
-        /*pb.setVisibility(View.VISIBLE);
         login.setVisibility(View.GONE);
         RequestQueue queue = Volley.newRequestQueue(DocLogin.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -93,7 +91,9 @@ public class DocLogin extends AppCompatActivity {
                 try {
                     JSONObject jsonResp = new JSONObject(response);
                     if (jsonResp.getString("resp").equals("1")) {
-                        startActivity(new Intent(getApplication(),DocProfile.class));
+                        Intent i=new Intent(getApplication(),DocProfile.class);
+                        i.putExtra("empid",id);
+                        startActivity(i);
                         Toast.makeText(DocLogin.this, "Logging In...", Toast.LENGTH_SHORT).show();
                     } else  {
                         Toast.makeText(DocLogin.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
@@ -103,7 +103,7 @@ public class DocLogin extends AppCompatActivity {
                 } catch (JSONException jsonError) {
                     pb.setVisibility(View.GONE);
                     login.setVisibility(View.VISIBLE);
-                    Toast.makeText(DocLogin.this, "Error connecting to Server", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DocLogin.this, "Error Parsing JSON: "+jsonError, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -124,6 +124,6 @@ public class DocLogin extends AppCompatActivity {
                 return map;
             }
         };
-        queue.add(request);*/
+        queue.add(request);
     }
 }

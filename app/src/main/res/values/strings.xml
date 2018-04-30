@@ -110,5 +110,11 @@
     <string name="error_field_required">This field is required</string>
 
     <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="empidLabel">Employee ID : </string>
+    <string name="nameLabel">Name : </string>
+    <string name="departmentLabel">Department : </string>
+    <string name="designationLabel">Designation : </string>
+    <string name="statusLabel">Change Status : </string>
 
 </resources>
