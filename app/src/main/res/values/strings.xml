@@ -111,6 +111,7 @@
 
     <string name="submit">Submit</string>
     <string name="update">Update</string>
+    <string name="loading">Loading Profile. Please Wait&#8230;</string>
     <string name="empidLabel">Employee ID : </string>
     <string name="nameLabel">Name : </string>
     <string name="departmentLabel">Department : </string>
