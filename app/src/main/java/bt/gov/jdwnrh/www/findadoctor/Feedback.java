@@ -23,6 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -64,10 +65,10 @@ public class Feedback extends AppCompatActivity {
     //Feedback
     public void SubmitFeedback(View view) {
         editText = (EditText) findViewById(R.id.feedbackSpace);
-        if(editText.getText().toString().length()==0){
+        if(editText.getText().toString().length()==0) {
             Toast.makeText(context, "Empty Feedback cannot be sent!", Toast.LENGTH_SHORT).show();
 
-        }else {
+        } else {
             progressBar.setVisibility(View.VISIBLE);
             subBut.setVisibility(View.GONE);
             RequestQueue queue = Volley.newRequestQueue(Feedback.this);
@@ -108,7 +109,7 @@ public class Feedback extends AppCompatActivity {
                         }
 
                     } catch (JSONException jsonError) {
-                        Toast.makeText(Feedback.this, "Error Submitting Feedback", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Feedback.this, "Error Submitting Feedback "+jsonError, Toast.LENGTH_SHORT).show();
                         subBut.setVisibility(View.VISIBLE);
                         progressBar.setVisibility(View.GONE);
                     }

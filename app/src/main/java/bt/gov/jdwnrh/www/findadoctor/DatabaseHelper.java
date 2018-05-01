@@ -15,30 +15,16 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 
-<<<<<<< HEAD
 /*public class DatabaseHelper extends SQLiteOpenHelper {
-=======
-<<<<<<< HEAD
-/*public class DatabaseHelper extends SQLiteOpenHelper {
-=======
-public class DatabaseHelper extends SQLiteOpenHelper {
     //Final Variables Declarations go here
->>>>>>> 93d5079c6ed25bff1dd6090b0e2b166ad49f2a61
->>>>>>> 6ae399f94bb7e1e0cd6812ced1c10220f11b0b8e
+    //Final Variables Declarations go here
     public static final String DATABASE_NAME="jdwnrh_findadoc";
 
     public DatabaseHelper(Context context) {
         super(context,DATABASE_NAME,null,1);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }*/
-=======
-}
-*/
->>>>>>> master
-=======
-
+/*
     //Overriding Methods from SQLite Class
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -55,4 +41,3 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 }
 */
->>>>>>> 6ae399f94bb7e1e0cd6812ced1c10220f11b0b8e

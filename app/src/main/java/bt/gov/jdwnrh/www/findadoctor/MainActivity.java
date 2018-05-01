@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplication(),DocProfile.class));
+                startActivity(new Intent(getApplication(),Notification.class));
             }
         });
 
@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(getApplication(), Notification.class));
             return true;
         } else if (id == R.id.nav_login) {
-            startActivity(new Intent(getApplication(), DoctorLogin.class));
+            startActivity(new Intent(getApplication(), DocLogin.class));
             return true;
         } else if (id == R.id.nav_feedback) {
             startActivity(new Intent(getApplication(), Feedback.class));

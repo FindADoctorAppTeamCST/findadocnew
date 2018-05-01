@@ -31,9 +31,10 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/thimphu"
+                android:layout_width="120dp"
+                android:layout_gravity="center"
+                android:layout_height="120dp"
+                app:srcCompat="@mipmap/app_logo"
                 android:layout_marginBottom="@dimen/fab_margin"
                 android:layout_marginTop="@dimen/fab_margin"/>
 
