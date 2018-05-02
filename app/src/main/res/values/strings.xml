@@ -117,5 +117,6 @@
     <string name="departmentLabel">Department : </string>
     <string name="designationLabel">Designation : </string>
     <string name="statusLabel">Change Status : </string>
+    <string name="logoutdoc">Logout Here</string>
 
 </resources>

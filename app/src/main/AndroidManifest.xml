@@ -125,7 +125,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".DocProfile">
+        <activity android:name=".DocProfile"
+            android:label="@string/doc_profile_label"
+            >
 
         </activity>
         <activity
