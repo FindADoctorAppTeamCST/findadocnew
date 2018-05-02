@@ -2,6 +2,7 @@ package bt.gov.jdwnrh.www.findadoctor;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Image;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -34,11 +35,11 @@ public class DocProfile extends AppCompatActivity {
     Switch aSwitch;
     DatePicker datePicker;
     Button update;
-    TextView l1,l2,l3,l4,load;
+    TextView l1,l2,l3,l4,l5,load;
     ImageView dp;
     public static final String[] MONTHS = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
     ProgressBar progressBar,pbload;
-    String passEmp, dateTill="",url="http://findadoc.dx.am/findadocandroid/profile.php",urlUpdate="http://findadoc.dx.am/findadocandroid/updateProfile.php",displayname,statStr="";
+    String passEmp, dateTill="",dispTill="",url="http://findadoc.dx.am/findadocandroid/profile.php",urlUpdate="http://findadoc.dx.am/findadocandroid/updateProfile.php",displayname,statStr="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -130,6 +131,7 @@ public class DocProfile extends AppCompatActivity {
         l2=(TextView)findViewById(R.id.name);
         l3=(TextView)findViewById(R.id.desig);
         l4=(TextView)findViewById(R.id.dept);
+        l5=(TextView)findViewById(R.id.textTill);
         RequestQueue queue = Volley.newRequestQueue(DocProfile.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -145,10 +147,17 @@ public class DocProfile extends AppCompatActivity {
                     l3.setText(jsonResp.getString("des"));
                     l4.setText(jsonResp.getString("dep"));
                     if(jsonResp.getString("sta").equals("0")) {
+                        dispTill="Currently OUT till "+jsonResp.getString("dat");
                         aSwitch.setChecked(false);
+                        l5.setVisibility(View.VISIBLE);
+                        l5.setTextColor(Color.RED);
+                        l5.setText(dispTill);
                         datePicker.setVisibility(View.VISIBLE);
                     } else {
                         aSwitch.setChecked(true);
+                        l5.setVisibility(View.VISIBLE);
+                        l5.setText("Currently IN");
+                        l5.setTextColor(Color.GREEN);
                     }
                 } catch (JSONException jsonError) {
                     Toast.makeText(DocProfile.this, "Error Loading Profile "+jsonError, Toast.LENGTH_SHORT).show();
