@@ -19,9 +19,9 @@ public class CustomAdapter extends ArrayAdapter<String> {
 
     String [] description =
             {
-                    "description1",
-                    "description2",
-                    "description3"
+                    "This app is for diagnosing the mental health issues",
+                    "This app is for getting Doctor's appointment from JDWNRH for off hour clinic",
+                    "The app is for booking online token at JDWNRH"
             };
 
     Integer[] imageid =
