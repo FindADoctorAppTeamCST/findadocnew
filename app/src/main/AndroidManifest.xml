@@ -125,18 +125,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".DocProfile"
-            android:label="@string/doc_profile_label"
-            >
-
+        <activity
+            android:name=".DocProfile"
+            android:label="@string/doc_profile_label">
         </activity>
         <activity
             android:name=".DocLogin"
             android:label="@string/title_activity_doc_login"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
 
         </activity>
+<!--        <activity android:name=".SearchResult">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity> -->
     </application>
-
 </manifest>

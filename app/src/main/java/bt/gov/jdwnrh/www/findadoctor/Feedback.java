@@ -41,7 +41,6 @@ public class Feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         context = this;
-        subBut=(Button)findViewById(R.id.button);
         progressBar=(ProgressBar)findViewById(R.id.progressBar1);
         editText = (EditText) findViewById(R.id.feedbackSpace);
         editText.addTextChangedListener(new TextWatcher() {

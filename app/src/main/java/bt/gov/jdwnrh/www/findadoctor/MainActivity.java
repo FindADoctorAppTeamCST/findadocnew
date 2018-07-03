@@ -1,5 +1,7 @@
 package bt.gov.jdwnrh.www.findadoctor;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,8 +16,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import static bt.gov.jdwnrh.www.findadoctor.R.menu.main;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -78,6 +83,7 @@ public class MainActivity extends AppCompatActivity
         psyt=(TextView)findViewById(R.id.l16);
         radt=(TextView)findViewById(R.id.l17);
         surt=(TextView)findViewById(R.id.l18);
+
 
         /*
             *Remove Intent Object  Creation from each OnClickListener if not needed, to decrease the LOC and Garbage
@@ -247,12 +253,12 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    //This Method Maybe Obselete. Verify and Remove if it is obselete.
+    //This Method Maybe Obsolete. Verify and Remove if it is obsolete.
     //* The Code to Extend the Search Bar on Touch, will maybe work, if the inflation ode is written here...
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(main, menu);
         return true;
     }
 
