@@ -55,16 +55,18 @@ public class CatTarget extends AppCompatActivity {
                 try {
                     JSONObject jsonResp = new JSONObject(response);
                     for (int i = 0; i < (Integer.parseInt(jsonResp.getString("total"))); i++) {
-                        //detail=new String[Integer.parseInt(jsonResp.getString("total"))][4];
-                        /*detail[i][0]=jsonResp.getString("name"+i);
+                        detail=new String[Integer.parseInt(jsonResp.getString("total"))][4];
+                        detail[i][0]=jsonResp.getString("name"+i);
                         detail[i][1]=jsonResp.getString("status"+i);
                         detail[i][2]=jsonResp.getString("designation"+i);
-                        detail[i][3]=jsonResp.getString("till"+i);*/
-                        Toast.makeText(CatTarget.this, jsonResp.getString("name" + i), Toast.LENGTH_SHORT).show();
+                        detail[i][3]=jsonResp.getString("till"+i);
+                        /*Toast.makeText(CatTarget.this, jsonResp.getString("name" + i), Toast.LENGTH_SHORT).show();
                         Toast.makeText(CatTarget.this, jsonResp.getString("status" + i), Toast.LENGTH_SHORT).show();
                         Toast.makeText(CatTarget.this, jsonResp.getString("designation" + i), Toast.LENGTH_SHORT).show();
                         Toast.makeText(CatTarget.this, jsonResp.getString("till" + i), Toast.LENGTH_SHORT).show();
-                    }
+                    */}
+                    /*Display di=new Display();
+                    di.displayDetails();*/
                 } catch (JSONException jsonError) {
                     Toast.makeText(CatTarget.this, "Error Fetching Data" + jsonError, Toast.LENGTH_SHORT).show();
                 }
