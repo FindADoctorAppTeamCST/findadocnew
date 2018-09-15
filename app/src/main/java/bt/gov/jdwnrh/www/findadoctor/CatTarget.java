@@ -34,7 +34,7 @@ public class CatTarget extends AppCompatActivity {
     HashMap<String, String> item;
     ListView listView;
     List<String> nameArr = new ArrayList<String>();
-    String detail[][];
+    String detail[][]= new String[1][4];;
     String name = "Khusant Chhetri", desig = "Developer", stat = "IN";
     int size;
 
@@ -43,7 +43,10 @@ public class CatTarget extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat_target);
         titleStr = (TextView) findViewById(R.id.speTitle);
-        detail = new String[30][4];
+        detail[0][0]="Hi";
+        detail[0][1]="Y";
+        detail[0][2]="Y";
+        detail[0][3]="Y";
         passTitle = getIntent().getExtras().getString("Value");
         titleStr.setText(passTitle);
         listView = (ListView) findViewById(R.id.list);
@@ -64,9 +67,11 @@ public class CatTarget extends AppCompatActivity {
                         Toast.makeText(CatTarget.this, jsonResp.getString("status" + i), Toast.LENGTH_SHORT).show();
                         Toast.makeText(CatTarget.this, jsonResp.getString("designation" + i), Toast.LENGTH_SHORT).show();
                         Toast.makeText(CatTarget.this, jsonResp.getString("till" + i), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CatTarget.this, jsonResp.getString("till" + i), Toast.LENGTH_SHORT).show();
                     */}
-                    /*Display di=new Display();
-                    di.displayDetails();*/
+                    Display di=new Display();
+                    di.displayDetails();
+                    Toast.makeText(CatTarget.this, jsonResp.getString("total"), Toast.LENGTH_SHORT).show();
                 } catch (JSONException jsonError) {
                     Toast.makeText(CatTarget.this, "Error Fetching Data" + jsonError, Toast.LENGTH_SHORT).show();
                 }
@@ -94,14 +99,14 @@ public class CatTarget extends AppCompatActivity {
 }
     class Display extends CatTarget {
         public void displayDetails() {
-            for(int i=0;i<detail.length;i++) {
+            for(int i=0;i<super.detail.length;i++) {
                 size=nameArr.size();
                 //desig=desigArr.get(i);
                 //stat=statusArr.get(i);
                 item = new HashMap<String, String>();
-                item.put("doc_name", detail[i][0]);
-                item.put("doc_status", detail[i][1]);
-                item.put("doc_designation", detail[i][2]);
+                item.put("doc_name", super.detail[i][0]);
+                item.put("doc_status", super.detail[i][1]);
+                item.put("doc_designation", super.detail[i][2]);
                 list.add(item);
             }
 
